@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Daily Planner</title>
+  <title>My Weekly Planner</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🌸 My Daily Planner 🌸</h1>
+    <h1>🌸 My Weekly Planner 🌸</h1>
+    <p id="dateDisplay" class="date-header"></p>
+
+    <select id="daySelect" onchange="changeDay()">
+      <option value="Sunday">Sunday</option>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+    </select>
+
     <input type="text" id="taskInput" placeholder="What’s your plan today?" />
     <button onclick="addTask()">Add</button>
 
@@ -17,4 +29,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
