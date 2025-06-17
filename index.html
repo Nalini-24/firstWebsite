@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>My Daily Planner</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <button onclick="sayHello()">Click Me</button>
+  <div class="container">
+    <h1>🌸 My Daily Planner 🌸</h1>
+    <input type="text" id="taskInput" placeholder="What’s your plan today?" />
+    <button onclick="addTask()">Add</button>
 
-    <script src="script.js"></script>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
